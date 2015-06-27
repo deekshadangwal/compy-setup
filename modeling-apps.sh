@@ -2,7 +2,7 @@ cd $HOME && mkdir -p localapps && cd localapps
 
 # BLENDER
 wget http://mirror.cs.umn.edu/blender.org/release/Blender2.74/blender-2.74-linux-glibc211-x86_64.tar.bz2 && tar -xvf blender-2.74-linux-glibc211-x86_64.tar.bz2 && mv blender-2.74-linux-glibc211-x86_64 Blender-2.74 && echo 'alias blender=$HOME/localapps/Blender-2.74/blender' >> $HOME/.bashrc && source ~/.bashrc && rm blender-2.74-linux-glibc211-x86_64.tar.bz2 # this gets blender app
-git clone http://git.blender.org/blender.git && cd blender && git submodule update --init --recursive && git submodule foreach git checkout master && git submodule foreach git pull --rebase origin master && build_files/build_environment/install_deps.sh --with-all --skip-osl && sudo make bpy && cd .. && rm -rf blender && sudo rm -rf build_linux_bpy # this gets bpy python module
+git clone http://git.blender.org/blender.git && cd blender && git submodule update --init --recursive && git submodule foreach git checkout master && git submodule foreach git pull --rebase origin master && build_files/build_environment/install_deps.sh --with-all --skip-osl && sudo make bpy && cd .. && rm -rf blender && sudo rm -rf build_linux_bpy && rm -rf $HOME/src # this gets bpy python module
 
 # MEEP
 sudo dnf install gcc-gfortran guile guile-devel libctl
