@@ -31,7 +31,7 @@ echo "Gedit"
 dnf -y install gedit gedit-plugins
 
 echo "Chrome"
-wget https://dl.google.com/linux/direct/google-chrome-stable_current_x86_64.rpm && dnf -y install lsb libXss.so.1 && rpm -iv google-chrome-stable_current_x86_64.rpm
+wget https://dl.google.com/linux/direct/google-chrome-stable_current_x86_64.rpm && dnf -y install lsb libXss.so.1 && rpm -iv google-chrome-stable_current_x86_64.rpm && rpm --import https://dl-ssl.google.com/linux/linux_signing_key.pub
 
 echo "Blender"
 # && source $HOME/.bashrc
