@@ -5,11 +5,10 @@ echo "~~ This is a Fedora 22 install script."
 echo "~~ src: Abhejit Rajagopal <rajagopal.abhejit@gmail.com>"
 echo "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~"
 
-$MACHINE=arAkela
-$LOCALHOME=/home/abhe
+MACHINE=arX86
+LOCALHOME=/home/abhe
 
 echo "We will install as root..."
-su
 
 echo "First things first.. set hostname:"
 hostnamectl set-hostname ar$MACHINE
