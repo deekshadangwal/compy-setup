@@ -34,3 +34,6 @@ wget https://dl.google.com/linux/direct/google-chrome-stable_current_x86_64.rpm 
 
 echo "Blender"
 # && source $HOME/.bashrc
+
+echo "Steam"
+dnf config-manager --add-repo=http://negativo17.org/repos/fedora-steam.repo && yum -y install steam && ./steam-fix.sh
