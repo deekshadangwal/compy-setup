@@ -17,7 +17,7 @@ echo "Updates & Basics..."
 dnf update && dnf -y install vim wget git lynx npm docker
 
 echo "Pythons..."
-dnf -y install python-devel numpy scipy python-imaging python-matplotlib python-pandas && dnf -y install python3-devel python3-numpy python3-scipy python3-imaging python3-matplotlib python3-pandas && pip install pip --upgrade && pip install ipython[all] && dnf -y install swig
+dnf -y install python-devel numpy scipy python-imaging python-matplotlib python-pandas python-scikit-learn h5py && dnf -y install python3-devel python3-numpy python3-scipy python3-imaging python3-matplotlib python3-pandas python3-scikit-learn python3-h5py && pip install pip --upgrade && pip install ipython[all] && dnf -y install swig
 
 echo "Desktop Environment..."
 dnf -y groupinstall "Cinnamon Desktop" && echo "exec /usr/bin/cinnamon-session" >> $LOCALHOME/.xinitrc
