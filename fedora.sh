@@ -29,3 +29,5 @@ cd $curdir
 
 ## install sublime text
 curl -L git.io/sublimetext | sh
+
+pip3 install pyrtl networkx
