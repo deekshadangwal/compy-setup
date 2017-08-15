@@ -9,6 +9,9 @@ apt-get install -y --fix-missing build-essential gcc gpp make cmake pkg-config l
 apt-get install -y --fix-missing ca-certificates git curl wget vim unzip python-dev npm # some basic utils
 apt-get install -y --fix-missing software-properties-common python-software-properties # lets you add-apt-repository
 
+# turn on firewall:
+sudo ufw enable
+
 # multimedia supoprt
 apt-get install -y libtbb2 libtbb-dev libjpeg8-dev libtiff5-dev libpng12-dev libdc1394-22-dev # img #libjasper, jasper?
 apt-get install -y libavcodec-dev libavformat-dev libswscale-dev libv4l-dev # video
@@ -18,5 +21,10 @@ apt-get install -y libatlas-base-dev gfortran
 
 #pythons:
 sudo apt-get install python-pip python3-pip
-
-
+pip3 install pyrtl
+pip3 install numpy
+pip3 install scipy
+pip3 install scikit-learn
+pip3 install pandas
+pip3 install matplotlib
+pip3 install keras
